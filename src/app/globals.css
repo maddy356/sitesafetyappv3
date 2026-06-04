@@ -227,3 +227,60 @@ input:focus, select:focus, textarea:focus {
   flex-direction: row-reverse;
 }
 
+/* Mobile Responsiveness */
+.split-view {
+  display: flex;
+  gap: 2rem;
+  height: calc(100vh - 6rem);
+}
+
+.grid-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.list-panel {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    height: auto;
+  }
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+  .split-view {
+    flex-direction: column;
+    height: auto;
+  }
+  .grid-split {
+    grid-template-columns: 1fr;
+  }
+  .list-panel {
+    width: 100% !important;
+    height: 350px;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .page-title {
+    font-size: 1.5rem;
+  }
+}

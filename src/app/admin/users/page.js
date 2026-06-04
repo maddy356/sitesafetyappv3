@@ -81,7 +81,7 @@ export default function AdminUsersPage() {
         <p className="page-description">Create new user IDs and assign roles for the Site Safety app.</p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+      <div className="grid-split">
         
         {/* Create User Form */}
         <div className="card">

@@ -41,10 +41,10 @@ export default function HistoryPage() {
   if (loading) return <div style={{ padding: '2rem' }}>Loading history...</div>;
 
   return (
-    <div className="animate-fade-in" style={{ display: 'flex', gap: '2rem', height: 'calc(100vh - 6rem)' }}>
+    <div className="animate-fade-in split-view">
       
       {/* Submissions List */}
-      <div className="card" style={{ width: '350px', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+      <div className="card list-panel">
         <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '1rem', marginBottom: '1rem' }}>
           <h2 style={{ fontSize: '1.25rem', fontWeight: '600' }}>{t('reviewedForms')}</h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{t('viewHistoryDesc')}</p>
