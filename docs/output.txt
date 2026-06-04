@@ -1,0 +1,307 @@
+=== Eyewash Checklist ===
+EYEWASH SAFETY CHECKLIST – STORES
+  Company:   ____________________________________  
+  Department / Zone:   __________________________  
+  Location of eyewash station:   _________________  
+  Inspector name:   ______________________________  
+  Date of inspection:   __________________________  
+SN
+Description
+compliant 
+Non-Compliant 
+Corrective Action Required
+1
+Access   – Path to station clear (no obstacles, pallets, equipment).  
+2
+Lighting   – Area well‑lit, emergency light functional if equipped
+3
+Signage   – Highly visible sign (dark yellow/green with ISO 7010 pictogram).
+4
+Shut‑off valve   – No leaks, no corrosion, handles easily.  
+5
+Nozzle covers   – Present, intact, clean, not yellowed or brittle.  
+6
+Bowl / basin   – Clean, no debris, no scratches.  
+7
+Protective covers   – Closed (if unit is plumbed‑in).  
+8
+No hazardous chemicals stored directly next to unit   
+9
+Water clarity   – Clear, no rust, no particles.  
+10
+Flow rate (quick check)   – Visually strong, steady flow
+
+=== Forklift Checklist ===
+Operator Name_________________________
+Emp # N. ______________________________
+Date: _________________________________
+Forklift Reg #:________________________________
+Site / Location: _______________________________
+Contractor: __________________________________
+Sr. #
+POINT
+OK
+NOT OK
+N/A
+COMMENTS
+1
+Lift system (includes cables, forks, etc.)
+2
+Seat Belt 
+3
+Cabin
+4
+Emergency Tool
+5
+Steps
+6
+Manufacturer Manual/ Maintenance Program
+7
+Leakage in hydraulic cylinders
+8
+Leakage of Diesel/ Oil and Lubricant etc.
+9
+Warning & Cautionary Boards 
+10
+Main clutch
+11
+Condition of Tyre/Tyre pressure
+12
+Condition of Battery and Lamps
+13
+Reverse horn
+14
+Operators Fitness
+15
+Fire Extinguisher in operators cabin
+16
+Rotatory beacons
+17
+Personnel operating the forklift properly trained.
+18
+Registration & Insurance Paper
+19
+Forklift Operator License
+20
+Forklift Operator  TTSJV ID Badge
+21
+Forklift Operator 3rd party  valid certified Paper
+22
+Qualified & Third Party certified Rigger
+23
+Forklift 3rd Party valid certified Paper
+24
+SWL Marked on equipment
+25
+Any other information
+Action Taken:
+Repairs/Corrections must be completed by: (date)
+Repairs/Corrections mentioned above have been done.  
+Inspector 
+Verifier 
+Name
+Signature
+
+=== Site Safety Checklist ===
+Site Safety Checklist
+Location:
+Area:
+Date:
+Inspector:
+Section
+A
+B
+C
+D
+E
+F
+G
+H
+I
+ALL
+comments
+A
+PEDESTRIAN SAFETY
+1
+Pedestrian walkways clearly marked (yellow lines)
+2
+Walkways free from obstructions, loose tools, cables, or spills
+3
+High-spillage areas have anti-slip mats/carpets
+4
+No cables running across pedestrian lanes (or properly covered/rewired)
+5
+Moving vehicles have side mirrors installed and functional
+6
+ Drivers honk when approaching pedestrian zones or blind spots
+7
+Objects stored at height are stable and size/weight appropriate
+8
+Storage racks bolted to ground; no loose tools/materials on high platforms
+9
+Work at height areas barricaded below
+B
+LIFTING OPERATIONS
+1
+Lifting area isolated / barricaded during operations
+2
+Load weight confirmed within equipment capacity (load chart visible)
+3
+Load properly fastened/secured before lift
+4
+Daily pre-use checklist completed for lifting equipment
+5
+Lifting equipment maintenance up to date (records available)
+6
+Third-party inspection certificate valid and displayed
+7
+Operator trained and certified
+8
+No obstructions blocking operator’s vision; or spotter used
+9
+Speed limits enforced for lifting vehicles; horns used at intersections
+C
+WOODWORKS
+1
+Cutting tools have guards/covers; emergency stops within reach
+2
+Operators using anti-cut gloves and appropriate PPE
+3
+Dust extraction / local exhaust ventilation (LEV) working
+4
+Dust masks provided and worn (if LEV insufficient)
+5
+Eye protection (visors/safety glasses) used for flying chips
+6
+Wood storage away from ignition sources; fire detection/alarm system functional
+7
+Firefighting equipment (extinguishers) accessible and inspected
+8
+Woodworking area isolated (noise barrier) and hearing protection used
+9
+Hand-held tools checked for vibration dampers; workers have rotating schedules
+10
+General housekeeping: dust and wood chips cleaned regularly
+D
+CHEMICAL HANDLING
+1
+Chemicals handled in enclosed / well-ventilated area
+2
+Local exhaust ventilation (LEV) functional where required
+3
+Appropriate respiratory PPE (masks) available and used
+4
+Handwash stations available and stocked
+5
+Chemical containers sealed when not in use
+6
+Workers wearing chemical-resistant gloves and full skin cover (long sleeves, pants/coveralls)
+7
+Spill kits available and accessible; workers trained on spill procedure
+8
+SDS (Safety Data Sheets) available for all chemicals
+9
+COSHH assessments available for each substance
+E
+CHEMICAL STORAGE
+1
+Flammable substances stored away from heat/ignition sources
+2
+Storage environment appropriate (temperature, ventilation)
+3
+Chemicals not stored at height (to avoid falling spills)
+4
+Incompatible substances segregated
+5
+Containers properly sealed and labelled
+6
+Spill containment (trays, bunds) in place for liquid chemicals
+7
+Fire detection/alarm system in storage area
+8
+Staff trained on chemical compatibility and storage
+F
+MANUAL HANDLING
+1
+Manual handling tasks automated where possible
+2
+Mechanical aids (trolleys, lift tables) provided for heavy loads
+3
+Employees trained in correct lifting techniques
+4
+Health surveillance in place for long-term manual handling injuries
+5
+WORK AT HEIGHT
+6
+Work at height avoided where possible (use extendable tools)
+7
+Workers trained and competent for height work
+8
+Guardrails / fall protection (harness & lanyard) provided and used
+9
+Safety nets or fall arrest systems in place where required
+10
+Rescue team available and trained
+11
+Permit-to-work system used
+12
+Area below barricaded to prevent falling objects
+13
+Tool holders/trays used to prevent dropped tools
+14
+Scaffolding / aerial lift inspected before use (certified personnel)
+15
+Working surface/platform stable and inspected
+16
+Safe distance from overhead power lines; LOTO procedures followed if electrical work
+G
+OFFICE WORK
+1
+Office chairs and desks ergonomically adjustable
+2
+Workers take regular breaks from prolonged sitting
+3
+No overloaded electrical circuits; no frayed cables
+4
+Electrical appliances regularly inspected and maintained
+5
+Display screen equipment (DSE) users take eye/rest breaks
+H
+FORKLIFT OPERATIONS
+1
+Forklift has valid third-party inspection certificate and sticker
+2
+Seatbelt present and operator wears it
+3
+overhead guard fitted and undamaged
+4
+Audible reverse alarm and blue spotlight 
+5
+Load backrest extension fitted
+6
+Daily pre-use inspection 
+7
+Fire extinguisher attached to forklift and inspected
+Operator holds valid  license
+I
+SKIP LOADER OPERATIONS
+1
+Pre-operation inspection of lifting arms, hooks, hydraulic locks, rear beams completed
+2
+Third-party inspection of lifting mechanism valid
+3
+Operator competent and trained with valid license
+J
+GENERAL HOUSEKEEPING & FIRE SAFETY
+1
+Aisles, exits, and emergency routes clear of obstructions
+2
+Fire extinguishers in place, inspected, and accessible
+3
+Emergency lighting and exit signs functioning
+4
+Spills cleaned immediately; appropriate spill kits available
+5
+Waste (including wood dust, chemical waste) disposed of properly
+6
+First aid kits stocked and accessible
