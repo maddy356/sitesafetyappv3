@@ -1,65 +1,103 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import Link from "next/link";
+import { Users, FileText, CheckSquare, Key } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+export default function Dashboard() {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+  const { t } = useLanguage();
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/login");
+    }
+  }, [status, router]);
+
+  if (status === "loading" || !session) return null;
+
+  const role = session.user?.role;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="animate-fade-in">
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 className="page-title">{t('welcome')}, {session.user.name}</h1>
+        <p className="page-description">{t('yourRoleIs')} <strong>{t(role?.toLowerCase())}</strong>.</p>
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+          {t('quickActions')}
+        </h2>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+          
+          {role === 'Admin' && (
+            <>
+              <Link href="/admin/users" className="card" style={{ padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textDecoration: 'none', color: 'inherit', transition: 'var(--transition)' }}>
+                <div style={{ backgroundColor: 'rgba(0, 102, 204, 0.1)', padding: '0.75rem', borderRadius: 'var(--radius-md)', color: 'var(--primary)' }}>
+                  <Users size={24} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem' }}>{t('createUsers')}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{t('manageUsers')}</p>
+                </div>
+              </Link>
+              
+              <Link href="/admin/credentials" className="card" style={{ padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textDecoration: 'none', color: 'inherit', transition: 'var(--transition)' }}>
+                <div style={{ backgroundColor: 'rgba(0, 102, 204, 0.1)', padding: '0.75rem', borderRadius: 'var(--radius-md)', color: 'var(--primary)' }}>
+                  <Key size={24} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem' }}>{t('viewCredentials')}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{t('viewCredentialsDesc')}</p>
+                </div>
+              </Link>
+            </>
+          )}
+
+          {(role === 'Manager' || role === 'Admin') && (
+            <Link href="/reviews" className="card" style={{ padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textDecoration: 'none', color: 'inherit', transition: 'var(--transition)' }}>
+              <div style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)', padding: '0.75rem', borderRadius: 'var(--radius-md)', color: 'var(--success)' }}>
+                <CheckSquare size={24} />
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem' }}>{t('reviewSubmissions')}</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{t('reviewSubDesc')}</p>
+              </div>
+            </Link>
+          )}
+
+          {(role === 'Labour' || role === 'Admin') && (
+            <>
+              <Link href="/forms" className="card" style={{ padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textDecoration: 'none', color: 'inherit', transition: 'var(--transition)' }}>
+                <div style={{ backgroundColor: 'rgba(245, 158, 11, 0.1)', padding: '0.75rem', borderRadius: 'var(--radius-md)', color: 'var(--warning)' }}>
+                  <FileText size={24} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem' }}>{t('startChecklist')}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{t('startChecklistDesc')}</p>
+                </div>
+              </Link>
+              
+              <Link href="/history" className="card" style={{ padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textDecoration: 'none', color: 'inherit', transition: 'var(--transition)' }}>
+                <div style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)', padding: '0.75rem', borderRadius: 'var(--radius-md)', color: 'var(--success)' }}>
+                  <CheckSquare size={24} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem' }}>{t('viewHistory')}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>{t('viewHistoryDesc')}</p>
+                </div>
+              </Link>
+            </>
+          )}
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
   );
 }
