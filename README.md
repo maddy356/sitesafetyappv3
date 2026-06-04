@@ -53,16 +53,6 @@ A modern, role-based safety management web application tailored for construction
    ```
    Navigate to `http://localhost:3000` to view the app.
 
-## Seeding Initial Data
-
-If starting from a fresh database, you can seed the Super Admin user by navigating to:
-```
-http://localhost:3000/api/seed
-```
-This will create the default Super Admin:
-- **Employee ID:** `ADMIN001`
-- **Password:** `admin123`
-
 ## Deployment
 
 This app is optimized for deployment on **Vercel**. 
