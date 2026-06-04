@@ -5,7 +5,7 @@ A modern, role-based safety management web application tailored for construction
 ## Features
 
 - **Role-Based Access Control (RBAC):**
-  - **Super Admin (`ADMIN001`):** Master access to all submissions, users, and credentials across all companies.
+  - **Super Admin:** Master access to all submissions, users, and credentials across all companies.
   - **Admin:** Can view and manage forms, users, and credentials *strictly for their own company*.
   - **Manager:** Can review and remark on forms submitted by Labourers *within their own company*.
   - **Labourer:** Can submit new safety checklists and view their own submission history.
